@@ -25,7 +25,7 @@ class BasePage:
         self.get_element(locator).click()
 
     def get_elements_text(self, locator):
-        return map(self.get_element_text(), self.get_elements(locator))
+        return list(map(self.get_element_text(), self.get_elements(locator)))
 
     def safe_click(self, locator):
         wait = WebDriverWait(self.driver, 10)
