@@ -22,7 +22,7 @@ class Test_edit_employee(BaseTest):
         self.home_page.clear_emp_id_field()
 
         #enter details of an employee
-        self.home_page.add_employee("amai", "bssb", "kkns", self.emp_id)
+        self.home_page.add_employee("tom", "", "winston", self.emp_id)
 
         #save the employee details
         self.home_page.save_employee_details()
@@ -52,7 +52,6 @@ class Test_edit_employee(BaseTest):
         self.home_page.navigate_to_empList()
 
         self.home_page.search_employee_by_id(self.emp_id)
-
 
 
 
