@@ -4,3 +4,5 @@ venv/
 .pytest_cache/ 
 **/__pycache__
 pages/__pycache__/HomePage.cpython-311.pyc
+**/*.pyc
+**/__pycache__/
