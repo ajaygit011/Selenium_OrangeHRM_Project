@@ -1,5 +1,7 @@
 import time
 
+import allure
+
 from base.BaseTest import BaseTest
 from configs.AutoConfigConstants import AutoConstants
 from pages.HomePage import HomePage
@@ -7,6 +9,7 @@ from pages.LoginPage import LoginPage
 
 
 class Test_del_emp(BaseTest):
+    @allure.severity(allure.severity_level.CRITICAL)
     def test_delete_employee(self):
         self.login_page = LoginPage(self.driver)
         self.home_page = HomePage(self.driver)
