@@ -25,7 +25,7 @@ class Test_add_employee_01(BaseTest):
         exp_save_msg = self.home_page.get_success_msg()
 
         #verify the expected save message
-        assert exp_save_msg == AutoConstants.save_msg ,"save  message mismatch"
+        assert exp_save_msg == AutoConstants.save_msg ,"save message mismatch"
 
         time.sleep(3)
 
