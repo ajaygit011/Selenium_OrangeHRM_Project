@@ -1,5 +1,7 @@
 import time
 
+import allure
+
 from base.BaseTest import BaseTest
 from configs.AutoConfigConstants import AutoConstants
 from pages.HomePage import HomePage
@@ -7,7 +9,7 @@ from pages.LoginPage import LoginPage
 
 
 class Test_edit_employee(BaseTest):
-
+    @allure.severity(allure.severity_level.NORMAL)
     def test_edit_employee_01(self):
         self.login_page = LoginPage(self.driver)
         self.home_page = HomePage(self.driver)
@@ -50,7 +52,6 @@ class Test_edit_employee(BaseTest):
         self.home_page.navigate_to_empList()
 
         self.home_page.search_employee_by_id(self.emp_id)
-        time.sleep(30)
 
 
 

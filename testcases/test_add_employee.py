@@ -1,5 +1,7 @@
 import time
 
+import allure
+
 from base.BaseTest import BaseTest
 from configs.AutoConfigConstants import AutoConstants
 from pages.HomePage import HomePage
@@ -7,6 +9,7 @@ from pages.LoginPage import LoginPage
 
 
 class Test_add_employee_01(BaseTest):
+    @allure.severity(allure.severity_level.NORMAL)
     def test_home_page_01(self):
         self.login_page = LoginPage(self.driver)
         self.home_page  = HomePage(self.driver)
@@ -27,6 +30,6 @@ class Test_add_employee_01(BaseTest):
         #verify the expected save message
         assert exp_save_msg == AutoConstants.save_msg ,"save message mismatch"
 
-        time.sleep(3)
+
 
 
