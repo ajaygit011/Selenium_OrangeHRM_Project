@@ -11,4 +11,4 @@ class AutoConstants:
     emp_id = randint(1000,9999)
     save_msg = "Successfully Saved"
     delete_pop_up_msg = "The selected record will be permanently deleted. Are you sure you want to continue?"
-
+    delete_msg = "Successfully Deleted"

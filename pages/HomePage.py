@@ -56,8 +56,7 @@ class HomePage(BasePage):
         self.click_element_using_js(self.save_emp_button)
         self.log_info('click on save button')
 
-    '''get delete/save success msg at the bottom of the page'''
-
+    '''get delete/save success msg at the bottom of the page / on pop-up'''
     def get_success_msg(self):
         self.wait_for_element(self.success_msg)
         return self.get_element_text(self.success_msg)

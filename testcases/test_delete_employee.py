@@ -58,4 +58,4 @@ class Test_del_emp(BaseTest):
         self.home_page.delete_record_permanently()
 
         deleteMsg = self.home_page.get_success_msg()
-        print(deleteMsg)
+        assert deleteMsg == AutoConstants.delete_msg , "delete message is not displayed"
