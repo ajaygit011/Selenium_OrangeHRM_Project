@@ -8,4 +8,5 @@ pages/__pycache__/HomePage.cpython-311.pyc
 **/__pycache__/
 base/__pycache__/*
 **/__pycache__
-
+reports/
+testcases/__pycache__/*
