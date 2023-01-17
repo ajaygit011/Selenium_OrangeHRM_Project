@@ -54,7 +54,7 @@ class Test_edit_employee(BaseTest):
         self.home_page.search_employee_by_id(self.emp_id)
 
         list_of_values = self.home_page.get_employee_details()
-        print(self.home_page.get_employee_details())
+        assert True == ('jessi' in list_of_values)
 
 
 
