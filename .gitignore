@@ -6,3 +6,4 @@ venv/
 pages/__pycache__/HomePage.cpython-311.pyc
 **/*.pyc
 **/__pycache__/
+base/__pycache__/*
