@@ -18,6 +18,7 @@ class HomePage(BasePage):
     search_btn = "//button[text()=' Search ']"
     record_found_txt = "//span[contains(text(),'Record Found')]"
     edit_emp_title = "//h6[text()='Personal Details']"
+    emp_details = "//div[@class='oxd-table-card']//div[contains(@class,'oxd-table-cell')]//div[text()]"
 
     '''Edit Employee Page Locators'''
     delete_pop_up_message = "//div[contains(@class,'oxd-sheet')]//div[@class='orangehrm-text-center-align']"
@@ -116,3 +117,8 @@ class HomePage(BasePage):
 
     def delete_record_permanently(self):
         self.safe_click(self.delete_confm_button)
+
+    def get_employee_details(self):
+        self.scroll_into_view(self.emp_details)
+        list_01= self.get_elements_text(self.emp_details)
+        return list_01
