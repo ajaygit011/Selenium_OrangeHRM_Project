@@ -2,4 +2,4 @@
 venv/
 .idea/
 .pytest_cache/ 
-base/__pycache__/*
+**/__pycache__
