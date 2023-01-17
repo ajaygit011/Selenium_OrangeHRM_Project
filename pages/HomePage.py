@@ -121,4 +121,4 @@ class HomePage(BasePage):
     def get_employee_details(self):
         self.scroll_into_view(self.emp_details)
         list_01= self.get_elements_text(self.emp_details)
-        return list_01
+        return list_01 
