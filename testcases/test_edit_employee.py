@@ -55,6 +55,8 @@ class Test_edit_employee(BaseTest):
 
         list_of_values = self.home_page.get_employee_details()
         assert True == ('jessi' in list_of_values)
+        print(self.home_page.get_employee_details())
+
 
 
 

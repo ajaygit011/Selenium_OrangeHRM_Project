@@ -2,11 +2,8 @@
 venv/
 .idea/
 .pytest_cache/ 
-**/__pycache__
-pages/__pycache__/HomePage.cpython-311.pyc
-**/*.pyc
-**/__pycache__/
-base/__pycache__/*
-**/__pycache__
 reports/
 testcases/__pycache__/*
+reports/
+testcases/__pycache__/*
+
