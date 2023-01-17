@@ -21,7 +21,7 @@ class Test_add_employee_01(BaseTest):
         #clear employee field
         self.home_page.clear_emp_id_field()
         time.sleep(3)
-        self.home_page.add_employee("aa","bb","cc",AutoConstants.emp_id)
+        self.home_page.add_employee("joe","white","Halman",AutoConstants.emp_id)
         self.home_page.save_employee_details()
 
         #get save success msg
