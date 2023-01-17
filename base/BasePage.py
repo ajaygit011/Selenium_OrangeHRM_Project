@@ -37,7 +37,7 @@ class BasePage:
 
     def move_to_element(self, locator):
         ele = self.get_element(locator)
-        self.getActions().move_to_element(ele)
+        self.getActions().move_to_element(ele).perform()
 
     def double_click(self, locator):
         ele = self.get_element(locator)
